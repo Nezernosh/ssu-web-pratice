@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <title>Third task</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div class="page-container">
+    <header class="header">
+        <div class="header-bar">
+            <div class="logo-container">
+                <img src="resources/brand-white.png" alt="Logo" class="logo">
+            </div>
+            <h1 class="title">
+                Header
+            </h1>
+            <nav class="nav-container hide-on-tablet">
+                <ul class="horizontal bold nav">
+                    <li class="nav-item"><a href="#">Link 1</a></li>
+                    <li class="nav-item"><a href="#">Link 2</a></li>
+                    <li class="nav-item"><a href="#">Link 3</a></li>
+                    <li class="nav-item"><a href="#">Link 4</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-bar">
+            <div class="search-bar hide-on-mobile">
+                <form>
+                    <input type="search" placeholder="Search" class="search-input">
+                    <button type="submit" class="search-submit">Search</button>
+                </form>
+            </div>
+            <div class="search-bar hidden show-on-mobile">
+                <button type="button">Button</button>
+            </div>
+            <div class="profile-bar hide-on-mobile">
+                <img src="resources/lirikN.jpg" alt="avatar" class="round avatar">
+                <span class="login">User Name</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="search-bar hidden show-on-tablet">
+            <input type="search" placeholder="Search">
+        </div>
+
+        <section class="intro">
+            <aside class="content-block hide-on-tablet">
+                <div class="title">Aside Header</div>
+
+                <div class="nav-container text-center">
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#">Link 1</a></li>
+                        <li class="nav-item"><a href="#">Link 2</a></li>
+                        <li class="nav-item"><a href="#">Link 3</a></li>
+                        <li class="nav-item"><a href="#">Link 4</a></li>
+                        <li class="nav-item"><a href="#">Link 5</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <div class="content-block gallery">
+                <h2 class="text-center title">Gallery</h2>
+
+                <div class="gallery-images">
+                    <img src="resources/1.jpg" alt="Gallery img" class="gallery-img">
+                    <img src="resources/2.jpg" alt="Gallery img" class="gallery-img">
+                    <img src="resources/3.jpg" alt="Gallery img" class="gallery-img">
+                </div>
+            </div>
+
+            <div class="content-block sign-in">
+                <h2 class="title">Sign in</h2>
+
+                <form class="sign-in-form">
+                    <input type="text" placeholder="Login" class="input">
+                    <input type="password" placeholder="Password" class="input">
+
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+
+                    <div class="text-right">
+                        <button type="submit">Sign in</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="articles-container">
+            <article class="content-block article">
+                <div class="article-top">
+                    <img src="resources/o-cat.jpg" alt="o-cat" class="img">
+                    <div class="title-container">
+                        <h2 class="title">Header for article</h2>
+                        <span class="subtitle hide-on-mobile">Normal text</span>
+                    </div>
+                </div>
+
+                <p class="article-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac facilisis lectus. Nam et sem
+                    ac diam dictum porttitor id ut turpis. Aliquam sollicitudin, leo vel pharetra ornare, elit sem
+                    condimentum nulla, vitae rhoncus leo tortor ac leo. Interdum et malesuada fames ac ante ipsum primis
+                    in faucibus. Integer vehicula purus ut convallis scelerisque. Praesent accumsan sapien neque, in
+                    mollis neque aliquet eget. Mauris ac eros ut mi interdum cursus. Fusce sed velit non libero posuere
+                    ullamcorper ac a turpis. In consectetur malesuada lacus commodo posuere. Nulla vel purus in velit
+                    viverra lobortis. Donec nec ultrices risus. Donec porta aliquam nisl non fermentum.
+                </p>
+            </article>
+
+            <article class="content-block article">
+                <div class="article-top">
+                    <img src="resources/my-ginger-cat.jpg" alt="my-ginger-cat" class="img">
+                    <div class="title-container">
+                        <h2 class="title">Header for article</h2>
+                        <span class="subtitle hide-on-mobile">Normal text</span>
+                    </div>
+                </div>
+
+                <p class="article-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse rhoncus, libero ut finibus
+                    vestibulum, erat purus rutrum turpis, ac tempor purus neque in magna. Suspendisse non ipsum placerat
+                    justo auctor malesuada sit amet in ante. Fusce et leo nisi. Ut sit amet arcu et dolor consectetur
+                    rutrum lobortis sed est. Curabitur et dictum sapien. Vivamus sit amet varius nisl. Vivamus volutpat
+                    tortor sed velit faucibus, vitae ultricies dolor fermentum. Duis sed mi ac risus sollicitudin
+                    eleifend vitae nec mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
+                    condimentum est lacus, ut vehicula elit porttitor id. Etiam pellentesque fringilla venenatis.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-btn">
+            <img src="resources/node-sass.png" alt="sass">
+            <span>Button</span>
+        </div>
+        <div class="footer-btn">
+            <img src="resources/node-sass.png" alt="sass">
+            <span>Button</span>
+        </div>
+        <div class="footer-btn">
+            <img src="resources/node-sass.png" alt="sass">
+            <span>Button</span>
+        </div>
+        <div class="footer-btn">
+            <img src="resources/node-sass.png" alt="sass">
+            <span>Button</span>
+        </div>
+        <div class="footer-btn">
+            <img src="resources/node-sass.png" alt="sass">
+            <span>Button</span>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

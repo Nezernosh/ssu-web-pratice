@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap4-glyphicons/css/bootstrap-glyphicons.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Fourth task</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="navbar navbar-expand navbar-dark navbar-fixed-top bg-dark">
+        <div class="navbar-brand">Control Panel</div>
+        <div class="navbar-collapse"></div>
+        <div class="dropdown">
+            <button class="btn btn-dark dropdown" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-user" aria-hidden="true"> Admin</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">My Profile</a>
+                <a class="dropdown-item"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span> Logout</a>
+            </div>
+        </div>
+    </div>
+    <div class="content container">
+        <div class="toolbox-dashboard row">
+            <div class="col-12 col-md-4 col-lg-4 toolbox">
+                <div class="block-header border-bottom mb-4 pb-4">
+                    <h3><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Toolbox</h3>
+                </div>
+                <ul class="list-unstyled container">
+                    <li><a href="#"><span class="glyphicon glyphicon-flash mb-4" aria-hidden="true"></span> Alerts</a>
+                    </li>
+                    <li><a href="#"><span class="glyphicon glyphicon-link mb-4" aria-hidden="true"></span> Links</a>
+                    </li>
+                    <li><a href="#"><span class="glyphicon glyphicon-list-alt mb-4" aria-hidden="true"></span> Reports</a>
+                    </li>
+                    <li><a href="#"><span class="glyphicon glyphicon-book mb-4" aria-hidden="true"></span> Books</a>
+                    </li>
+                    <li><a href="#"><span class="glyphicon glyphicon-briefcase mb-4" aria-hidden="true"></span> Tools</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-record mb-4" aria-hidden="true"></span>
+                        Real-time</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-plus mb-4" aria-hidden="true"></span>
+                        Advanced..</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-8 col-lg-8 dashboard">
+                <div class="border-bottom mb-4 pb-4 block-header">
+                    <h3><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> Dashboard</h3>
+                </div>
+                <div class="border-bottom mb-4 pb-4 dashboard-alert">
+                    <div class="alert alert-secondary" role="alert">Inbox Messages
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">3</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header"><h4>Processing Status</h4></div>
+                    <div class="card-body">
+                        <label>Complete</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 60%"
+                                 aria-valuenow="60"
+                                 aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                        <label>In progress</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 15%" aria-valuenow="30"
+                                 aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                        <label>At risk</label>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="10"
+                                 aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-bottom mb-4 pb-4 reports-header row">
+            <h3 class="col-xs-12">
+                <a href=""><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Reports</a>
+            </h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-9 reports-block border-bottom mb-4 pb-4">
+                <table class="table">
+                    <thead class="font-weight-bold">
+                    <tr>
+                        <td>Visits</td>
+                        <td>ROI</td>
+                        <td>Source</td>
+                        <td>Description and notes</td>
+                    </tr>
+                    </thead>
+                    <tr class="table-active">
+                        <td>45</td>
+                        <td>2.45%</td>
+                        <td>Direct</td>
+                        <td>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis leo at nibh scelerisque
+                            congue.
+                            Praesent gravida lorem quis metus feugiat semper. Nullam mollis ante eget aliquam mollis.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>289</td>
+                        <td>56.2%</td>
+                        <td>Referral</td>
+                        <td>
+                            Integer at tincidunt urna. Vestibulum commodo justo sed mi pulvinar fermentum. Pellentesque
+                            fringilla
+                            elit massa, nec malesuada velit ultrices non. Sed ut urna velit.
+                        </td>
+                    </tr>
+                    <tr class="table-active">
+                        <td>98</td>
+                        <td>25%</td>
+                        <td>Type</td>
+                        <td>
+                            Quisque luctus varius odio ut aliquet. Pellentesque pellentesque quam sit amet cursus
+                            pharetra.
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                            egestas.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>109</td>
+                        <td>8%</td>
+                        <td></td>
+                        <td>
+                            Nullam augue libero, faucibus sit amet est pharetra, congue vehicula lacus. Praesent vitae
+                            est quam.
+                            Nulla purus arcu, feugiat in est vitae, viverra feugiat turpis. Vivamus quis vehicula
+                            sapien.
+                        </td>
+                    </tr>
+                    <tr class="table-active">
+                        <td>34</td>
+                        <td>14%</td>
+                        <td></td>
+                        <td>
+                            In a pellentesque quam. Nulla rhoncus dolor ut ornare vestibulum. Integer convallis ante
+                            augue,
+                            non dapibus tellus interdum in. Sed vulputate, odio et lobortis viverra, odio dui eleifend
+                            enim,
+                            maximus varius leo tortor vel enim.
+                        </td>
+                    </tr>
+                </table>
+                <div class="card">
+                    <div class="card-header">New Requests
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item active">Hosting virtual mailbox serv..</li>
+                            <li class="list-group-item">Dedicated server doesn't</li>
+                            <li class="list-group-item">RHEL 6 install on new..</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="alert alert-primary" role="alert">Please remember to Logout for classified security.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">x</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                    <div class="card-header">Submit request
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="inputName">Name</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="Enter Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword">Title</label>
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                            </div>
+                            <div>
+                                <label for="details">Details</label>
+                                <textarea class="form-control" rows="3" id="details"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputSelect">Select</label>
+                                <select class="form-control form-control-lg" id="inputSelect">
+                                    <option value="" disabled selected>General question</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Post</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">Engagement</div>
+                    <div class="card-body d-inline mx-auto">
+                        <img src="resources/1.png" class="rounded-circle p-2" alt="first engagement">
+                        <img src="resources/2.png" class="rounded-circle p-2" alt="second engagement">
+                        <img src="resources/3.png" class="rounded-circle p-2" alt="third engagement">
+                        <img src="resources/4.png" class="rounded-circle p-2" alt="fourth engagement">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
+</script>
+</body>
+</html>

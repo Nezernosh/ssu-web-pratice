@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>JS task</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="content container">
+        <div class="card">
+            <div class="card-header">
+                <h1>JS Basics</h1>
+            </div>
+            <div class="card-body">
+
+                <form role="form">
+                    <h4 class="mb-3">Count Numbers</h4>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <input type="text" class="form-control" id="expression-input" placeholder="expression">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <input type="text" class="form-control" id="expression-result" placeholder="result"
+                                   readonly>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-outline-dark" onclick="setExpressionResult()">Count
+                        </button>
+                    </div>
+                </form>
+
+                <form role="form">
+                    <h4 class="mb-3">Delete Repeated</h4>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <textarea type="text" class="form-control" id="text-input" placeholder="text"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <textarea type="text" class="form-control" id="delete-result" placeholder="result"
+                                      readonly></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-outline-dark" onclick="setDeleteResult()">Delete</button>
+                    </div>
+                </form>
+
+                <form role="form">
+                    <h4 class="mb-3">Format Date</h4>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <input type="datetime-local" class="form-control" value="1970-01-01T00:00:00" step="1"
+                                   id="datetime-local-input" title="date and time">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <input type="text" class="form-control" id="mask-input" placeholder="mask">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <input type="text" class="form-control" id="datetime-result" placeholder="result" readonly>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-outline-dark" onclick="setFormatDateResult()">Format
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/parseExpression.js"></script>
+<script src="js/deleteRepeatedSymbols.js"></script>
+<script src="js/formatDate.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
+</script>
+</body>
+</html>
